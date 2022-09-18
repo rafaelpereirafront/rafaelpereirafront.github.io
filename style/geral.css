@@ -1,8 +1,18 @@
+@import url('https://api.fontshare.com/v2/css?f[]=technor@400,700&display=swap');
+
+:root {
+  --background: #f5f6f6;
+  --grey-second: #717580;
+  --grey-third: #dadde6;
+  --font-color-black: #1a1a1a;
+}
+
 * {
   padding: 0;
   margin: 0;
   list-style: none;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 html {
@@ -10,12 +20,13 @@ html {
 }
 
 body {
-  background: #f5f6f6;
+  background: var(--background);
 }
 
 .contain {
-  max-width: 1400px;
-  padding: 0 2em;
+  width: 100%;
+  max-width: 1286px;
+  padding: 0 1.5em;
   margin: 0 auto;
 }
 
@@ -23,11 +34,21 @@ h1,
 h2,
 h3,
 h4,
-h5 {
-  font-family: 'poppins', sans-serif;
+h5,
+p,
+a {
+  color: var(--font-color-black);
+  letter-spacing: 0.1rem;
 }
 
 h1 {
-  font-size: 4.8rem;
-  color: #1a1a1a;
+  font-family: 'inter', sans-serif;
+  font-size: 9.4rem;
+  font-weight: 900;
+}
+
+p,
+a {
+  font-size: 1.6rem;
+  line-height: 2.3rem;
 }

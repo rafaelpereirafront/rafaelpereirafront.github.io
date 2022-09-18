@@ -1,0 +1,58 @@
+.div-nav {
+  display: flex;
+  justify-content: right;
+  align-items: flex-start;
+  padding-top: 1em;
+}
+
+.div-nav li {
+  margin-left: 1.2em;
+}
+
+.translate-br,
+.translate-br {
+  cursor: pointer;
+}
+
+.translate {
+  display: flex;
+}
+
+.translate-br {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(/scr/brasil.png) center center no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.translate-us {
+  display: none;
+  width: 30px;
+  background: url(/scr/estados-unidos-da-america.png) center center no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.translate:hover {
+  filter: invert(20%);
+}
+
+svg {
+  cursor: pointer;
+  max-height: 30px;
+}
+
+svg:hover {
+  fill: #666666;
+}
+
+.header-text {
+  padding-top: 24.9em;
+  margin: 0 auto;
+}
+
+h1 span {
+  color: var(--grey-second);
+}
