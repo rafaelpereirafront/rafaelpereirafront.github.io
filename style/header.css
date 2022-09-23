@@ -2,45 +2,29 @@ header {
   min-height: 100vh;
 }
 
+.nav-bar {
+  width: 100vw;
+  position: fixed;
+  /* left: 0; */
+  background: rgba(245, 246, 246, 0.7);
+  backdrop-filter: blur(5px);
+  z-index: 1;
+}
+
 .div-nav {
+  max-width: 1256px;
+  /* max-width: 1419px; */
   display: flex;
   justify-content: right;
   align-items: flex-start;
-  padding-top: 1em;
+  padding: 1em 0;
 }
 
 .div-nav li {
-  margin-left: 1.2em;
-}
-
-.translate-br,
-.translate-br {
-  cursor: pointer;
-}
-
-.translate {
-  display: flex;
-}
-
-.translate-br {
+  position: relative;
   display: block;
-  width: 30px;
-  height: 30px;
-  background: url(/scr/brasil.png) center center no-repeat;
-  background-size: contain;
-  cursor: pointer;
-}
-
-.translate-us {
-  display: none;
-  width: 30px;
-  background: url(/scr/estados-unidos-da-america.png) center center no-repeat;
-  background-size: contain;
-  cursor: pointer;
-}
-
-.translate:hover {
-  filter: invert(20%);
+  margin-left: 1.2em;
+  z-index: 2;
 }
 
 .div-nav svg {
@@ -84,4 +68,12 @@ h1 span {
   70% {
     transform: translateY(-5px);
   }
+}
+
+.mac {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  right: -20.5rem;
+  z-index: -1;
 }

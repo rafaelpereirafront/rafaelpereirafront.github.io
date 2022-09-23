@@ -1,0 +1,128 @@
+.modal-wrapper {
+  height: 100vh;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-wrapper.active {
+  display: flex;
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.active .modal {
+  animation: modal 0.5s forwards;
+}
+
+.modal {
+  width: 100rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 15px;
+  background: var(--background);
+  box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.15);
+}
+
+.modal img {
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  display: block;
+  border-radius: 15px 0 0 15px;
+}
+
+.modal-div {
+  padding: 8em 5em;
+  position: relative;
+}
+
+.modal-text h2 {
+  margin-bottom: 3rem;
+}
+
+.modal-text p {
+  margin-bottom: 2rem;
+}
+
+.modal-link {
+  display: flex;
+  align-items: center;
+}
+
+.modal-a {
+  padding: 1rem 0;
+}
+
+.modal-git svg:hover {
+  fill: var(--grey-second);
+}
+
+.buttom-view {
+  margin-right: 3rem;
+  padding: 1.6rem 2.5rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: var(--background);
+  font-weight: 700;
+  background: #1a1a1a;
+}
+
+.buttom-view:hover {
+  font-weight: 700;
+  transition: all 0.4s;
+  background: var(--grey-second);
+  box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 10px;
+}
+
+.modal-text h3 {
+  margin: 3rem 0 2.5rem;
+}
+
+.modal-technology {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.modal-technology img {
+  margin-bottom: 2.5rem;
+  margin-right: 2.5rem;
+  display: block;
+  width: 100%;
+  max-width: 50px;
+  clip-path: circle(50%);
+  box-sizing: border-box;
+}
+
+.close {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  border-radius: 50%;
+  background: var(--background);
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: var(--grey-second);
+}

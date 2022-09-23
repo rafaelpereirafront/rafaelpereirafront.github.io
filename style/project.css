@@ -9,13 +9,46 @@
   gap: 3.2em;
 }
 
+.list-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.list-img::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1a1a1a;
+  opacity: 0.5;
+  border-radius: 15px;
+  z-index: -1;
+  cursor: pointer;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in;
+}
+
+.list-img:hover::before {
+  transform: scaleX(1);
+  transition: all 0.4s ease;
+  width: 100%;
+  z-index: 0;
+}
+
+.project_images li {
+  overflow: hidden;
+}
+
 .project_images li img {
-  display: block;
   width: 100%;
   max-width: 60rem;
   max-height: 70rem;
+  display: block;
   border-radius: 15px;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .project_description {
