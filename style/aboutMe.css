@@ -1,3 +1,10 @@
-.aboutMe ul {
-  display: flex;
+.aboutMe {
+  padding-top: 24em;
+  min-height: 100vh;
+}
+
+.aboutMe-grid {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  margin-bottom: 10em;
 }
