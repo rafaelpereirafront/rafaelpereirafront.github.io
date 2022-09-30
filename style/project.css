@@ -26,7 +26,7 @@
 }
 
 .project_images img:hover {
-  transform: scale(1.3);
+  transform: scale(1.15);
   transition: all 0.4s linear;
 }
 
@@ -37,4 +37,8 @@
 .project_description h3 {
   margin-top: 1.5em;
   margin-bottom: 0.5em;
+}
+
+.paragraph-modal {
+  display: none;
 }
