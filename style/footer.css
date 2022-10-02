@@ -1,4 +1,39 @@
 footer {
+  padding-top: 12em;
   background: #1a1a1a;
-  min-height: 65vh;
+  min-height: 60vh;
 }
+
+footer h2,
+footer p {
+  max-width: 500px;
+  margin-bottom: 1em;
+  color: var(--background);
+}
+
+footer h2 {
+  font-size: 3rem;
+  flex-wrap: nowrap;
+}
+
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-contact svg {
+  fill: var(--background);
+}
+
+.footer-grid button {
+  padding: 1em 3em;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.6rem;
+  /* background: ;
+  color: var(--background); */
+}
+
+/* .footer-grid button:hover {
+  background: red;
+} */

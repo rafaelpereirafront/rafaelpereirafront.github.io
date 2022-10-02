@@ -65,3 +65,8 @@ a {
   font-size: 1.6rem;
   line-height: 2.3rem;
 }
+
+button {
+  cursor: pointer;
+  font-family: var(--font-family-p);
+}
