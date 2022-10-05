@@ -93,7 +93,7 @@ h1 span {
 /*nootebook*/
 @media (max-width: 1540px) {
   .mac {
-    max-height: 650px;
+    height: 650px;
   }
 }
 
