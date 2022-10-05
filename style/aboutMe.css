@@ -45,3 +45,19 @@
   margin-right: 3em;
   margin-bottom: 0.5em;
 }
+
+@media (max-width: 977px) {
+  .aboutMe {
+    display: block;
+  }
+
+  .aboutMe-grid {
+    max-width: unset;
+    height: 100%;
+  }
+
+  .skill-grid img {
+    margin-right: 2.5em;
+    margin-bottom: 2.5em;
+  }
+}

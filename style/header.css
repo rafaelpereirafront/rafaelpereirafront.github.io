@@ -84,8 +84,7 @@ h1 span {
   max-width: 1307px;
   height: 740px;
   position: absolute;
-  /* display: block; */
-  display: none;
+  display: block;
   bottom: 0;
   right: -29.5rem;
   z-index: -1;

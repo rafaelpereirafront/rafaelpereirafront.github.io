@@ -1,6 +1,7 @@
 footer {
   padding-top: 12em;
-  background: #1a1a1a;
+  padding-bottom: 4em;
+  background: var(--background-light);
   min-height: 60vh;
 }
 
@@ -27,13 +28,33 @@ footer h2 {
 
 .footer-grid button {
   padding: 1em 3em;
-  border-radius: 8px;
   font-weight: 700;
   font-size: 1.6rem;
-  /* background: ;
-  color: var(--background); */
+  border: none;
+  border-radius: 8px;
+  background: var(--color-title-span);
 }
 
-/* .footer-grid button:hover {
-  background: red;
-} */
+.footer-grid button:hover {
+  color: var(--color-title);
+  background: var(--background-dark);
+}
+
+@media (max-width: 977px) {
+  footer {
+    padding-top: 8em;
+    min-height: unset;
+  }
+
+  .footer-grid {
+    display: block;
+  }
+
+  .footer-contact {
+    margin-bottom: 2em;
+  }
+
+  .footer-contact-h2 h2 {
+    font-size: 2.4rem;
+  }
+}
