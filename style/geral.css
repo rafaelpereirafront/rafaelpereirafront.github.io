@@ -1,7 +1,10 @@
 :root {
-  --background: #f5f6f6;
+  --background-dark: #060112;
+  --background-light: #fff;
   --grey-second: #717580;
   --grey-third: #dadde6;
+  --color-title: #fff;
+  --color-title-span: #b57bee;
   --font-color-black: #1a1a1a;
   --font-family-title: 'satoshi', sans-serif;
   --font-family-p: 'satoshi', sans-serif;
@@ -20,7 +23,7 @@ html {
 }
 
 body {
-  background: var(--background);
+  background: var(--background-dark);
   overflow-x: hidden;
   max-width: 100vw;
 }
@@ -32,21 +35,32 @@ body {
   margin: 0 auto;
 }
 
-h1,
 h2,
 h3,
 h4,
 h5,
 p,
 a {
-  color: var(--font-color-black);
+  color: var(--color-title);
   letter-spacing: 0.1rem;
 }
 
 h1 {
+  color: var(--color-title);
   font-family: var(--font-family-title);
-  font-size: 9.4rem;
+  font-size: 7.4rem;
   font-weight: 900;
+  animation: left-animation 0.4s linear;
+}
+
+@keyframes left-animation {
+  0% {
+    transform: translateX(-70px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 h2 {

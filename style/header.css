@@ -5,35 +5,44 @@ header {
 .nav-bar {
   width: 100vw;
   position: fixed;
-  /* left: 0; */
-  background: rgba(245, 246, 246, 0.7);
+  background: rgba(6, 1, 18, 0.7);
   backdrop-filter: blur(5px);
   z-index: 1;
 }
 
 .div-nav {
   max-width: 1256px;
-  /* max-width: 1419px; */
   display: flex;
   justify-content: right;
   align-items: flex-start;
-  padding: 1em 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .div-nav li {
   position: relative;
   display: block;
-  margin-left: 1.2em;
+  margin-left: 1.5em;
   z-index: 2;
 }
 
+#flagBr {
+  display: none;
+}
+
+#flagEn svg:hover,
+#flagBr svg:hover {
+  filter: brightness(80%);
+}
+
 .div-nav svg {
+  fill: #ffff;
   cursor: pointer;
   max-height: 30px;
 }
 
 .div-nav svg:hover {
-  fill: #666666;
+  fill: var(--color-title-span);
 }
 
 .header-text {
@@ -42,7 +51,7 @@ header {
 }
 
 h1 span {
-  color: var(--grey-second);
+  color: var(--color-title-span);
 }
 
 .header-text h1 {
@@ -71,9 +80,38 @@ h1 span {
 }
 
 .mac {
+  width: 100%;
+  max-width: 1307px;
+  height: 740px;
   position: absolute;
-  display: block;
+  /* display: block; */
+  display: none;
   bottom: 0;
-  right: -20.5rem;
+  right: -29.5rem;
   z-index: -1;
+}
+
+/*nootebook*/
+
+@media (min-width: 840px) and (max-width: 1290px) {
+  .mac {
+    width: unset;
+  }
+}
+
+@media (max-width: 839px) {
+  .mac {
+    display: none;
+  }
+}
+
+/*mobile*/
+@media (max-width: 480px) {
+  h1 {
+    font-size: 4.2rem;
+  }
+
+  .header-text {
+    padding-top: 10em;
+  }
 }

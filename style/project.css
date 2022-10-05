@@ -42,3 +42,19 @@
 .paragraph-modal {
   display: none;
 }
+
+@media (max-width: 977px) {
+  .project_images {
+    grid-template-columns: 1fr 1fr;
+  }
+  .contain {
+    padding: 0 2.4em;
+  }
+}
+
+/*mobile*/
+@media (max-width: 539px) {
+  .project_images {
+    grid-template-columns: 1fr;
+  }
+}

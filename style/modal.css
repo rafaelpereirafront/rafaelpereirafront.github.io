@@ -35,11 +35,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   border-radius: 15px;
-  background: var(--background);
+  background: var(--background-light);
   box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.15);
 }
 
-.modal img {
+[data-modal='imageModal'] {
   width: 100%;
   max-width: 500px;
   height: 100%;
@@ -70,7 +70,8 @@
 }
 
 .modal-git svg:hover {
-  fill: var(--grey-second);
+  transition: all 0.4s;
+  fill: var(--color-title-span);
 }
 
 .buttom-view {
@@ -81,18 +82,24 @@
   cursor: pointer;
   color: var(--background);
   font-weight: 700;
-  background: #1a1a1a;
+  background: var(--font-color-black);
 }
 
 .buttom-view:hover {
   font-weight: 700;
   transition: all 0.4s;
-  background: var(--grey-second);
+  background: var(--color-title-span);
   box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 10px;
 }
 
 .modal-text h3 {
+  color: var(--font-color-black);
   margin: 3rem 0 2.5rem;
+}
+
+[data-modal='title'],
+[data-modal='paragraph'] {
+  color: var(--font-color-black);
 }
 
 .modal-technology {
@@ -124,5 +131,35 @@
 }
 
 .close:hover {
-  color: var(--grey-second);
+  transition: all 0.4s;
+  color: var(--color-title-span);
+}
+
+@media (max-width: 977px) {
+  .modal {
+    width: 90vw;
+  }
+
+  .modal-div {
+    padding: 3em;
+  }
+}
+
+/*mobile*/
+@media (max-width: 539px) {
+  .modal {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-div {
+    padding: 2.5em;
+  }
+
+  .project_images {
+    grid-template-columns: 1fr;
+  }
+
+  [data-modal='imageModal'] {
+    display: none;
+  }
 }
