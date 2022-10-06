@@ -30,6 +30,20 @@ header {
   display: none;
 }
 
+#flagEn,
+#flagBr {
+  animation: opacityImg 0.5s linear;
+}
+
+@keyframes opacityImg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 #flagEn svg:hover,
 #flagBr svg:hover {
   filter: brightness(80%);

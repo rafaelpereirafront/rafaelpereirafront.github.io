@@ -4,13 +4,29 @@ footer {
   background: var(--background-light);
   min-height: 60vh;
 }
+/* footer {
+  padding-top: 12em;
+  padding-bottom: 4em;
+  background: linear-gradient(
+    180deg,
+    hsla(258, 89%, 4%, 1) 30%,
+    hsla(270, 77%, 71%, 1) 100%
+  );
+  min-height: 60vh;
+} */
 
 footer h2,
 footer p {
   max-width: 500px;
   margin-bottom: 1em;
-  color: var(--background);
+  color: var(--font-color-black);
 }
+/* footer h2,
+footer p {
+  max-width: 500px;
+  margin-bottom: 1em;
+  color: var(--color-title);
+} */
 
 footer h2 {
   font-size: 3rem;
@@ -23,7 +39,16 @@ footer h2 {
 }
 
 .footer-contact svg {
-  fill: var(--background);
+  fill: var(--font-color-black);
+}
+.footer-contact svg:hover {
+  fill: var(--color-title-span);
+}
+.footer-contact svg {
+  fill: var(--color-title);
+}
+.footer-contact svg:hover {
+  fill: var(--color-title-span);
 }
 
 .footer-grid button {
@@ -39,6 +64,9 @@ footer h2 {
   color: var(--color-title);
   background: var(--background-dark);
 }
+/* .footer-grid button:hover {
+  background: var(--background-light);
+} */
 
 @media (max-width: 977px) {
   footer {

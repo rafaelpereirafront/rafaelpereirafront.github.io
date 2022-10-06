@@ -2,11 +2,6 @@ export default function initModal() {
   const modalOpen = document.querySelectorAll('.list-img');
   const closeModal = document.querySelector('[data-modal="close"]');
   const containModal = document.querySelector('[data-modal="wrapper"]');
-  const getImage = document.querySelectorAll('.list-img img');
-  const getParagraph = document.querySelectorAll('.paragraph-modal');
-  const setImage = document.querySelector('[data-modal="imageModal"]');
-  const setTitle = document.querySelector('[data-modal="title"]');
-  const setParagraphModal = document.querySelector('[data-modal="paragraph"]');
 
   function OpenModal() {
     containModal.classList.toggle('active');
@@ -16,11 +11,18 @@ export default function initModal() {
     if (event.target === this) OpenModal(event);
   }
 
+  const modal = document.querySelector('.modal');
+  const modalDiv = document.querySelector('.modal-div');
+  const createImage = document.createElement('img');
+  const getImage = document.querySelectorAll('.list-img img');
+
   function SetAttributeImage(event) {
     let src = event.target.attributes.src.value;
     let alt = event.target.attributes.alt.value;
-    setImage.setAttribute('src', src);
-    setImage.setAttribute('alt', alt);
+    createImage.setAttribute('data-modal', 'imageModal');
+    createImage.setAttribute('src', src);
+    createImage.setAttribute('alt', alt);
+    modal.insertBefore(createImage, modalDiv);
   }
 
   function SetImage() {
@@ -30,13 +32,21 @@ export default function initModal() {
         .addEventListener('click', SetAttributeImage);
   }
 
+  const modalText = document.querySelector('.modal-text');
+  const createTitle = document.createElement('h2');
+
   function SetTitle() {
+    createTitle.setAttribute('data-modal', 'title');
     for (let n = 0; n < getImage.length; n++)
       document.getElementById(`image${n + 1}`).addEventListener('click', () => {
         let h2 = document.getElementById(`title${n + 1}`);
-        setTitle.textContent = h2.textContent;
+        createTitle.textContent = h2.textContent;
+        modalText.insertBefore(createTitle, setParagraphModal);
       });
   }
+
+  const getParagraph = document.querySelectorAll('.paragraph-modal');
+  const setParagraphModal = document.querySelector('[data-modal="paragraph"]');
 
   function SetParagraph() {
     for (let n = 0; n < getImage.length; n++)

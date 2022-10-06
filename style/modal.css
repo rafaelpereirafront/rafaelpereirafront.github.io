@@ -69,9 +69,12 @@
   padding: 1rem 0;
 }
 
+.modal-git svg {
+  transition: all 0.5s;
+}
+
 .modal-git svg:hover {
-  transition: all 0.4s;
-  fill: var(--color-title-span);
+  fill: var(--color-hover);
 }
 
 .buttom-view {
@@ -83,12 +86,12 @@
   color: var(--background);
   font-weight: 700;
   background: var(--font-color-black);
+  transition: all 0.5s;
 }
 
 .buttom-view:hover {
   font-weight: 700;
-  transition: all 0.4s;
-  background: var(--color-title-span);
+  background: var(--color-hover);
   box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 10px;
 }
 
@@ -125,14 +128,14 @@
   right: 0;
   border: none;
   border-radius: 50%;
-  background: var(--background);
+  background: none;
   font-size: 2.2rem;
   cursor: pointer;
+  transition: all 0.5s;
 }
 
 .close:hover {
-  transition: all 0.4s;
-  color: var(--color-title-span);
+  color: var(--color-hover);
 }
 
 @media (max-width: 977px) {
