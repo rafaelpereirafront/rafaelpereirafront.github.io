@@ -1,0 +1,74 @@
+{
+  "project": [
+    {
+      "paragraph": "este é o projeto dos cosmeticos",
+      "page": "url da webpage0",
+      "github": "url do github0",
+      "tecnology": [
+        {
+          "js": "src da imagem js",
+          "mysql": "src da imagem mysql",
+          "docker": "src da imagem js",
+          "react": "src da imagem react",
+          "nodejs": "src da imagem nodejs"
+        }
+      ]
+    },
+    {
+      "paragraph": "projeto das NFTs em construção",
+      "page": "url da webpage1",
+      "github": "url do github1",
+      "tecnology": [
+        {
+          "js": "src da imagem js",
+          "mysql": "src da imagem mysql",
+          "docker": "src da imagem js",
+          "react": "src da imagem react",
+          "nodejs": "src da imagem nodejs"
+        }
+      ]
+    },
+    {
+      "paragraph": "projeto de cadastro de usuário no banco de dados",
+      "page": "url da webpage2",
+      "github": "url do github2",
+      "tecnology": [
+        {
+          "js": "src da imagem js",
+          "mysql": "src da imagem mysql",
+          "docker": "src da imagem js",
+          "react": "src da imagem react",
+          "nodejs": "src da imagem nodejs"
+        }
+      ]
+    },
+    {
+      "paragraph": "projeto react em desenvolvimento",
+      "page": "url da webpage3",
+      "github": "url do github3",
+      "tecnology": [
+        {
+          "js": "src da imagem js",
+          "mysql": "src da imagem mysql",
+          "docker": "src da imagem js",
+          "react": "src da imagem react",
+          "nodejs": "src da imagem nodejs"
+        }
+      ]
+    },
+    {
+      "paragraph": "esta é uma webpage para uma empresa de emprestimos Lorem ipsum dolor sit amet consectetur adipisicing elit. Et rem aliquid magnam reiciendis numquam totam autem sint, doloribus labore sit rerum asperiores quos id eaque sunt quia corrupti odit consequuntur!",
+      "page": "url da webpage4",
+      "github": "url do github4",
+      "tecnology": [
+        {
+          "js": "src da imagem js",
+          "mysql": "src da imagem mysql",
+          "docker": "src da imagem js",
+          "react": "src da imagem react",
+          "nodejs": "src da imagem nodejs"
+        }
+      ]
+    }
+  ]
+}

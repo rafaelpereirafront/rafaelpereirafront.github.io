@@ -60,7 +60,25 @@ export default function initModal() {
   closeModal.addEventListener('click', OpenModal);
   containModal.addEventListener('click', ClickOutside);
 
+  const url = 'text.json';
+  const urlPage = document.querySelector('.modal-a');
+  const urlGit = document.querySelector('.modal-git');
+  function jsonModal() {
+    fetch(url)
+      .then((response) => {
+        return response.json();
+      })
+      .then((jsonData) => setJson(jsonData));
+  }
+
+  function setJson(jsonData) {
+    for (let n = 0; n < getImage.length; n++)
+      getParagraph[n].innerText = jsonData.project[n].paragraph;
+    // urlPage.setAttribute('href', jsonData.project[n].page);
+  }
+
   SetImage();
   SetTitle();
   SetParagraph();
+  jsonModal();
 }

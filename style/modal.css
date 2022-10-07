@@ -138,6 +138,10 @@
   color: var(--color-hover);
 }
 
+.pTeste {
+  color: red;
+}
+
 @media (max-width: 977px) {
   .modal {
     width: 90vw;
