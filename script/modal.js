@@ -1,4 +1,4 @@
-export default function initModal() {
+export default async function initModal() {
   const modalOpen = document.querySelectorAll('.list-img');
   const closeModal = document.querySelector('[data-modal="close"]');
   const containModal = document.querySelector('[data-modal="wrapper"]');
@@ -55,6 +55,25 @@ export default function initModal() {
       });
   }
 
+  const resJson = await fetch('text.json');
+  const data = await resJson.json();
+  const arrayTecnology = data.projectBr;
+  const modalTecnology = document.querySelector('.modal-technology');
+
+  function Createlogo(dado, id, array) {
+    const createLogo = document.createElement('img');
+    const src = data.projectBr[0].src[0];
+    createLogo.setAttribute('src', src);
+    modalTecnology.appendChild(createLogo);
+  }
+
+  function SetLogo() {
+    for (let n = 0; n < getImage.length; n++)
+      document.getElementById(`image${n + 1}`).addEventListener('click', () => {
+        arrayTecnology.forEach(Createlogo);
+      });
+  }
+
   for (let i = 0; i < modalOpen.length; i++)
     modalOpen[i].addEventListener('click', OpenModal);
   closeModal.addEventListener('click', OpenModal);
@@ -63,6 +82,8 @@ export default function initModal() {
   const url = 'text.json';
   const urlPage = document.querySelector('.modal-a');
   const urlGit = document.querySelector('.modal-git');
+  let imageArray = [...getImage];
+
   function jsonModal() {
     fetch(url)
       .then((response) => {
@@ -72,11 +93,16 @@ export default function initModal() {
   }
 
   function setJson(jsonData) {
-    for (let n = 0; n < getImage.length; n++)
-      getParagraph[n].innerText = jsonData.project[n].paragraph;
-    // urlPage.setAttribute('href', jsonData.project[n].page);
+    for (let i = 0; i < getImage.length; i++)
+      (getParagraph[i].innerText = jsonData.projectBr[i].paragraph),
+        imageArray[i].addEventListener('click', (e) => {
+          let id = imageArray.indexOf(e.target);
+          urlPage.setAttribute('href', jsonData.projectBr[id].page),
+            urlGit.setAttribute('href', jsonData.projectBr[id].github);
+        });
   }
 
+  SetLogo();
   SetImage();
   SetTitle();
   SetParagraph();

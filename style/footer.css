@@ -1,88 +1,91 @@
 footer {
-  padding-top: 12em;
-  padding-bottom: 4em;
-  background: var(--background-light);
-  min-height: 60vh;
-}
-/* footer {
-  padding-top: 12em;
-  padding-bottom: 4em;
   background: linear-gradient(
-    180deg,
-    hsla(258, 89%, 4%, 1) 30%,
-    hsla(270, 77%, 71%, 1) 100%
+    0deg,
+    hsla(258, 89%, 52%, 1) 0%,
+    hsla(258, 89%, 4%, 1) 35%
   );
-  min-height: 60vh;
-} */
-
-footer h2,
-footer p {
-  max-width: 500px;
-  margin-bottom: 1em;
-  color: var(--font-color-black);
-}
-/* footer h2,
-footer p {
-  max-width: 500px;
-  margin-bottom: 1em;
-  color: var(--color-title);
-} */
-
-footer h2 {
-  font-size: 3rem;
-  flex-wrap: nowrap;
 }
 
-.footer-grid {
+.aboutMe {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10em;
+  padding-top: 24em;
+  min-height: 100vh;
+}
+
+.aboutMe-grid {
+  margin-bottom: 10em;
+  max-width: 60em;
+}
+
+.aboutMe-grid h2 {
+  margin-bottom: 1em;
+}
+
+.aboutMe-grid p {
+  margin-bottom: 0.5em;
+}
+.aboutMe-grid ul {
   display: flex;
-  justify-content: space-between;
 }
 
-.footer-contact svg {
-  fill: var(--font-color-black);
-}
-.footer-contact svg:hover {
-  fill: var(--color-title-span);
-}
-.footer-contact svg {
-  fill: var(--color-title);
-}
-.footer-contact svg:hover {
-  fill: var(--color-title-span);
+.aboutMe-grid li svg {
+  margin-top: 1.5em;
+  fill: var(--background-light);
+  transition: all 0.3s linear;
 }
 
-.footer-grid button {
+.aboutMe-grid li svg:hover {
+  fill: var(--color-title-span);
+  transition: all 0.3s linear;
+}
+
+.skill-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.skills {
+  margin-bottom: 6em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-grid img {
+  max-width: 6em;
+  margin-right: 3em;
+  margin-bottom: 0.5em;
+}
+
+.skill-contact button {
   padding: 1em 3em;
   font-weight: 700;
   font-size: 1.6rem;
   border: none;
   border-radius: 8px;
   background: var(--color-title-span);
+  transition: all 0.3s linear;
 }
 
-.footer-grid button:hover {
-  color: var(--color-title);
-  background: var(--background-dark);
-}
-/* .footer-grid button:hover {
+.skill-contact button:hover {
+  transition: all 0.3s linear;
   background: var(--background-light);
-} */
+}
 
 @media (max-width: 977px) {
-  footer {
-    padding-top: 8em;
-    min-height: unset;
-  }
-
-  .footer-grid {
+  .aboutMe {
     display: block;
   }
 
-  .footer-contact {
-    margin-bottom: 2em;
+  .aboutMe-grid {
+    max-width: unset;
+    height: 100%;
   }
 
-  .footer-contact-h2 h2 {
-    font-size: 2.4rem;
+  .skill-grid img {
+    margin-right: 2.5em;
+    margin-bottom: 2.5em;
   }
 }
