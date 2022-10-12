@@ -1,8 +1,8 @@
 footer {
   background: linear-gradient(
-    0deg,
-    hsla(258, 89%, 52%, 1) 0%,
-    hsla(258, 89%, 4%, 1) 35%
+    35deg,
+    rgba(117, 62, 244, 1) 0%,
+    rgba(6, 1, 18, 1) 35%
   );
 }
 
@@ -33,12 +33,12 @@ footer {
 .aboutMe-grid li svg {
   margin-top: 1.5em;
   fill: var(--background-light);
-  transition: all 0.3s linear;
+  transition: all 0.2s linear;
 }
 
 .aboutMe-grid li svg:hover {
   fill: var(--color-title-span);
-  transition: all 0.3s linear;
+  transition: all 0.2s linear;
 }
 
 .skill-grid {
@@ -65,12 +65,12 @@ footer {
   font-size: 1.6rem;
   border: none;
   border-radius: 8px;
-  background: var(--color-title-span);
-  transition: all 0.3s linear;
+  background: #d6b7f6;
+  transition: all 0.2s linear;
 }
 
 .skill-contact button:hover {
-  transition: all 0.3s linear;
+  transition: all 0.2s linear;
   background: var(--background-light);
 }
 
