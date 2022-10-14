@@ -1,8 +1,6 @@
-export default function initTranslate() {
+export default function InitTranslate() {
   const languageBr = document.querySelector('#flagBr');
   const languageEn = document.querySelector('#flagEn');
-  const textPt = document.getElementsByClassName('.text-pt');
-  const textEn = document.getElementsByClassName('.text-en');
 
   function changeLanguage(e) {
     const id = e.composedPath()[2];

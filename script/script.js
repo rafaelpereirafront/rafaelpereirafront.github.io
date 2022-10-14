@@ -1,5 +1,5 @@
 import initModal from './modal.js';
-import initTranslate from './translate.js';
+import InitTranslate from './translate.js';
 
 initModal();
-initTranslate();
+InitTranslate();

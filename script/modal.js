@@ -33,18 +33,8 @@ export default async function initModal() {
         .addEventListener('click', SetAttributeImage);
   }
 
-  const modalText = document.querySelector('.modal-text');
-  const createTitle = document.createElement('h2');
-
-  function SetTitle() {
-    createTitle.setAttribute('data-modal', 'title');
-    for (let n = 0; n < getImage.length; n++)
-      document.getElementById(`image${n + 1}`).addEventListener('click', () => {
-        let h2 = document.getElementById(`title${n + 1}`);
-        createTitle.textContent = h2.textContent;
-        modalText.insertBefore(createTitle, setParagraphModal);
-      });
-  }
+  const languageBr = document.querySelector('#flagBr');
+  const languageEn = document.querySelector('#flagEn');
 
   const getParagraph = document.querySelectorAll('.paragraph-modal');
   const setParagraphModal = document.querySelector('[data-modal="paragraph"]');
@@ -63,16 +53,23 @@ export default async function initModal() {
       })
       .then((jsonData) => setJson(jsonData));
   }
-  /*Parte para mudar quando for traduzir*/
+
   function setJson(jsonData) {
     for (let i = 0; i < getImage.length; i++)
       (getParagraph[i].innerText = jsonData.modalJson[i].paragraphEn),
+        languageEn.addEventListener('click', () => {
+          getParagraph[i].innerText = jsonData.modalJson[i].paragraphEn;
+        }),
+        languageBr.addEventListener('click', () => {
+          getParagraph[i].innerText = jsonData.modalJson[i].paragraphBr;
+        }),
         imageArray[i].addEventListener('click', (e) => {
           let id = imageArray.indexOf(e.target);
           urlPage.setAttribute('href', jsonData.modalJson[id].page),
             urlGit.setAttribute('href', jsonData.modalJson[id].github);
         });
   }
+
   const resJson = await fetch('text.json');
   const data = await resJson.json();
   const modalTecnology = document.querySelector('.modal-technology');
@@ -104,7 +101,6 @@ export default async function initModal() {
 
   SetTechnology();
   SetImage();
-  SetTitle();
   SetParagraph();
   jsonModal();
 }

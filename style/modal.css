@@ -86,7 +86,11 @@
   color: var(--background);
   font-weight: 700;
   background: var(--font-color-black);
-  transition: all 0.5s;
+  transition: all 0.2s;
+}
+
+.pt .buttom-view {
+  padding: 1.6rem 4rem;
 }
 
 .buttom-view:hover {
