@@ -15,6 +15,7 @@ export default async function initModal() {
   const modalDiv = document.querySelector('.modal-div');
   const createImage = document.createElement('img');
   const getImage = document.querySelectorAll('.list-img img');
+  let imageArray = [...getImage];
 
   function SetAttributeImage(event) {
     let src = event.target.attributes.src.value;
@@ -55,35 +56,6 @@ export default async function initModal() {
       });
   }
 
-  const resJson = await fetch('text.json');
-  const data = await resJson.json();
-  const arrayTecnology = data.projectBr;
-  const modalTecnology = document.querySelector('.modal-technology');
-
-  function Createlogo(dado, id, array) {
-    const createLogo = document.createElement('img');
-    const src = data.projectBr[0].src[0];
-    createLogo.setAttribute('src', src);
-    modalTecnology.appendChild(createLogo);
-  }
-
-  function SetLogo() {
-    for (let n = 0; n < getImage.length; n++)
-      document.getElementById(`image${n + 1}`).addEventListener('click', () => {
-        arrayTecnology.forEach(Createlogo);
-      });
-  }
-
-  for (let i = 0; i < modalOpen.length; i++)
-    modalOpen[i].addEventListener('click', OpenModal);
-  closeModal.addEventListener('click', OpenModal);
-  containModal.addEventListener('click', ClickOutside);
-
-  const url = 'text.json';
-  const urlPage = document.querySelector('.modal-a');
-  const urlGit = document.querySelector('.modal-git');
-  let imageArray = [...getImage];
-
   function jsonModal() {
     fetch(url)
       .then((response) => {
@@ -101,8 +73,36 @@ export default async function initModal() {
             urlGit.setAttribute('href', jsonData.projectBr[id].github);
         });
   }
+  const resJson = await fetch('text.json');
+  const data = await resJson.json();
+  const modalTecnology = document.querySelector('.modal-technology');
 
-  SetLogo();
+  function SetTechnology() {
+    for (let i = 0; i < getImage.length; i++)
+      imageArray[i].addEventListener('click', (e) => {
+        let idLogo = imageArray.indexOf(e.target);
+        const arrayTecnology = data.projectBr[idLogo].src;
+        const imgModal = document.querySelectorAll('.modal-technology img');
+        for (let i = 0; i < imgModal.length; i++)
+          imgModal[i] ? imgModal[i].parentNode.removeChild(imgModal[i]) : null;
+        arrayTecnology.forEach((dados) => {
+          const elementCreate = document.createElement('img');
+          elementCreate.setAttribute('src', dados);
+          modalTecnology.appendChild(elementCreate);
+        });
+      });
+  }
+
+  for (let i = 0; i < modalOpen.length; i++)
+    modalOpen[i].addEventListener('click', OpenModal);
+  closeModal.addEventListener('click', OpenModal);
+  containModal.addEventListener('click', ClickOutside);
+
+  const url = 'text.json';
+  const urlPage = document.querySelector('.modal-a');
+  const urlGit = document.querySelector('.modal-git');
+
+  SetTechnology();
   SetImage();
   SetTitle();
   SetParagraph();
