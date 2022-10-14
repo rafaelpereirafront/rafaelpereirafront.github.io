@@ -74,6 +74,28 @@ footer {
   background: var(--background-light);
 }
 
+.en .text-pt {
+  display: none;
+}
+
+.text-pt,
+.text-en {
+  animation: showText 0.5s ease-in;
+}
+
+.pt .text-en {
+  display: none;
+}
+
+@keyframes showText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @media (max-width: 977px) {
   .aboutMe {
     display: block;

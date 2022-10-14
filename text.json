@@ -1,7 +1,8 @@
 {
-  "projectBr": [
+  "modalJson": [
     {
-      "paragraph": "este é o projeto dos cosmeticos",
+      "paragraphEn": "this project is the Cosmetics",
+      "paragraphBr": "este é o projeto dos cosmeticos",
       "page": "url da webpage0",
       "github": "url do github0",
       "src": [
@@ -12,25 +13,28 @@
       ]
     },
     {
-      "paragraph": "projeto das NFTs em construção",
+      "paragraphEn": "this project is the NFTs em construção",
+      "paragraphBr": "projeto das NFTs em construção",
       "page": "url da webpage1",
       "github": "url do github1",
       "src": ["/scr/technology/docker.png", "/scr/technology/reacjs.png"]
     },
     {
-      "paragraph": "projeto de cadastro de usuário no banco de dados",
+      "paragraphEn": "this project is the de usuário no banco de dados",
       "page": "url da webpage2",
       "github": "url do github2",
       "src": ["/scr/technology/reacjs.png"]
     },
     {
-      "paragraph": "projeto react em desenvolvimento",
+      "paragraphEn": "this project is the react em desenvolvimento",
+      "paragraphBr": "este é o projeto do react",
       "page": "url da webpage3",
       "github": "url do github3",
       "src": ["/scr/technology/mysql.png"]
     },
     {
-      "paragraph": "esta é uma webpage para uma empresa de emprestimos Lorem ipsum dolor sit amet consectetur adipisicing elit. Et rem aliquid magnam reiciendis numquam totam autem sint, doloribus labore sit rerum asperiores quos id eaque sunt quia corrupti odit consequuntur!",
+      "paragraphEn": "this project is the webpage s Lorem ipsum dolor sit amet consectetur adipisicing elit. Et rem aliquid magnam reiciendis numquam totam autem sint, doloribus labore sit rerum asperiores quos id eaque sunt quia corrupti odit consequuntur!",
+      "paragraphBr": "este é o projeto do SPMK",
       "page": "url da webpage4",
       "github": "url do github4",
       "src": ["/scr/technology/nodejs.png"]

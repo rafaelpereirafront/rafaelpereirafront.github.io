@@ -63,14 +63,14 @@ export default async function initModal() {
       })
       .then((jsonData) => setJson(jsonData));
   }
-
+  /*Parte para mudar quando for traduzir*/
   function setJson(jsonData) {
     for (let i = 0; i < getImage.length; i++)
-      (getParagraph[i].innerText = jsonData.projectBr[i].paragraph),
+      (getParagraph[i].innerText = jsonData.modalJson[i].paragraphEn),
         imageArray[i].addEventListener('click', (e) => {
           let id = imageArray.indexOf(e.target);
-          urlPage.setAttribute('href', jsonData.projectBr[id].page),
-            urlGit.setAttribute('href', jsonData.projectBr[id].github);
+          urlPage.setAttribute('href', jsonData.modalJson[id].page),
+            urlGit.setAttribute('href', jsonData.modalJson[id].github);
         });
   }
   const resJson = await fetch('text.json');
@@ -81,7 +81,7 @@ export default async function initModal() {
     for (let i = 0; i < getImage.length; i++)
       imageArray[i].addEventListener('click', (e) => {
         let idLogo = imageArray.indexOf(e.target);
-        const arrayTecnology = data.projectBr[idLogo].src;
+        const arrayTecnology = data.modalJson[idLogo].src;
         const imgModal = document.querySelectorAll('.modal-technology img');
         for (let i = 0; i < imgModal.length; i++)
           imgModal[i] ? imgModal[i].parentNode.removeChild(imgModal[i]) : null;
