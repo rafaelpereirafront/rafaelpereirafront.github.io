@@ -32,6 +32,7 @@ footer {
 }
 .aboutMe-grid ul {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .aboutMe-grid li {
@@ -116,8 +117,9 @@ footer {
   }
 
   .aboutMe h2 {
+    margin-bottom: 1.3em;
     line-height: 1.2em;
-    font-size: 3rem;
+    font-size: 3.2rem;
   }
 
   .aboutMe-grid {
