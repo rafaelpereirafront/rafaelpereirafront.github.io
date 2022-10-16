@@ -26,6 +26,10 @@ body {
   overflow-x: hidden;
   max-width: 100vw;
 }
+.wrapper {
+  overflow-x: hidden !important;
+  position: relative;
+}
 
 .contain {
   width: 100%;

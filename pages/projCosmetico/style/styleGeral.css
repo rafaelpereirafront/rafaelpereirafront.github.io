@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;900&family=Istok+Web&display=swap');
+
+:root {
+  --border-blue: #22223b;
+  --hover-menu: #e3d5ca;
+  --blue-color: #22223b;
+  --dist-left: calc((100% - 168em) / 2);
+  --a-hover-color: #acacac;
+  --btn-hover-color: #323259;
+  --blue-color-p: #1a1918;
+  --btn-hover-shadown: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fdfdfd;
+}
+
+ul,
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+.container {
+  max-width: 1632px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+}
+
+h1 {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 7.7rem;
+  line-height: 9rem;
+  color: var(--blue-color);
+  white-space: normal;
+}
+
+h2 {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4.8rem;
+  text-align: center;
+  line-height: 5rem;
+  color: var(--blue-color);
+}
+
+h3 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 5rem;
+  color: var(--blue-color);
+}
+
+h4 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--blue-color);
+}
+
+h5 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  color: var(--blue-color);
+}
+
+p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 5rem;
+  color: var(--blue-color-p);
+}
+
+a {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  line-height: 2.2rem;
+  color: var(--blue-color);
+  cursor: pointer;
+}
+
+button {
+  padding: 0.8em 4.2em;
+  background: var(--blue-color);
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #ffff;
+  border: none;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--btn-hover-color);
+  box-shadow: var(--btn-hover-shadown);
+}
+
+img {
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+  background: #f7f7f8;
+}
+
+/*Tablet*/
+
+@media (min-width: 400px) and (max-width: 900px) {
+  h1 {
+    font-weight: 400;
+    font-size: 7.4rem;
+    line-height: 7.4rem;
+  }
+}
+
+/*Mobile*/
+
+@media (max-width: 400px) {
+  h1 {
+    font-weight: 400;
+    font-size: 4.4rem;
+    line-height: 5.4rem;
+  }
+}

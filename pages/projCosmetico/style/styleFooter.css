@@ -1,0 +1,270 @@
+.subsFt {
+  width: 953px;
+  position: absolute;
+  top: -20%;
+  margin: 0 calc((100vw - 970px) / 2);
+  display: flex;
+  max-width: 953px;
+  padding: 3.2em 6.4em;
+  justify-content: space-between;
+  background: #f5ebe0;
+  box-sizing: border-box;
+}
+
+.subsFt img {
+  margin-bottom: 0.8em;
+}
+
+.grid-subsFt {
+  width: 397px;
+}
+
+#btnSubs {
+  padding: 0.75em 2em;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 19px;
+  border: 1px solid var(--border-blue);
+}
+
+.grid-inputFt {
+  display: flex;
+  flex-direction: row;
+}
+
+.subsFt input {
+  width: 60%;
+  padding: 0.75em;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 19px;
+  color: var(--border-blue);
+  border: 1px solid var(--border-blue);
+}
+
+.subsLf-p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 34px;
+}
+
+.subsRh-p {
+  font-size: 1.6rem;
+}
+
+.subsFt p {
+  color: #3e517a;
+}
+
+/*Footer*/
+
+footer {
+  position: relative;
+  background: var(--border-blue);
+}
+
+.wrapper,
+.ftGrid {
+  display: flex;
+}
+
+.wrapper {
+  justify-content: space-between;
+}
+
+.ftGrid {
+  width: 60%;
+  justify-content: space-between;
+  padding-top: 12em;
+}
+
+.ftGrid ul {
+  padding-right: 1em;
+  white-space: nowrap;
+}
+
+.gridFt-1 {
+  max-width: 395px;
+  padding-top: 150px;
+  margin-right: 33px;
+}
+
+.txtFt {
+  width: 100%;
+  margin-bottom: 3.2em;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 220.02%;
+  color: #fff4f1;
+}
+
+.rightsFt {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 34px;
+  color: #fff4f1;
+}
+
+.ftGrid ul li {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 220.02%;
+  text-transform: uppercase;
+  color: rgba(255, 244, 241, 0.8);
+}
+
+.txtFt h4 {
+  font-family: 'inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 220.02%;
+  text-transform: uppercase;
+  color: #fff4f1;
+}
+
+.cards {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 950px) and (max-width: 1150px) {
+  .subsFt {
+    width: 100%;
+    max-width: inherit;
+    margin: 0;
+    padding: 3.2em 2.4em;
+  }
+
+  .ftGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ftGrid ul {
+    margin-bottom: 1em;
+  }
+
+  .cardWrapper {
+    padding-top: 0;
+  }
+
+  .cards {
+    margin-top: 0.5em;
+  }
+}
+/*Tablet*/
+
+@media (min-width: 450px) and (max-width: 950px) {
+  .subsFt {
+    display: flex;
+    width: 100%;
+    position: initial;
+    margin: 0;
+    padding: 3.2em 2.4em;
+  }
+
+  .subsFt input {
+    width: 55%;
+  }
+
+  .gridFt-1 {
+    padding-top: 0;
+  }
+
+  .wrapper {
+    padding: 6.4em 0;
+    display: block;
+  }
+
+  .txtFt {
+    margin: 0;
+  }
+
+  .gridFt-1 {
+    margin-right: 0;
+  }
+
+  .rightsFt {
+    display: none;
+  }
+
+  .ftGrid {
+    padding-top: 4em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2.4em;
+  }
+
+  .ftGrid ul {
+    margin-right: 0;
+  }
+
+  .cardWrapper {
+    display: none;
+  }
+}
+
+/*Mobile*/
+
+@media (max-width: 450px) {
+  .subsFt {
+    display: block;
+    width: 100%;
+    position: initial;
+    margin: 0;
+    padding: 3.2em 2.4em;
+  }
+
+  .grid-subsFt {
+    width: auto;
+  }
+
+  .subsRh-p {
+    padding-top: 1em;
+  }
+
+  .rightsFt {
+    display: none;
+  }
+
+  .txtFt,
+  .gridFt-1 {
+    margin: 0;
+  }
+
+  .wrapper {
+    padding: 6.4em 0;
+    flex-direction: column;
+  }
+
+  .ftGrid {
+    width: 100%;
+    padding-top: 4em;
+    flex-direction: column;
+  }
+
+  .gridFt-1 {
+    padding-top: 0;
+  }
+
+  .ftGrid ul {
+    margin: 0;
+    padding-bottom: 2.4em;
+  }
+
+  .cardWrapper {
+    display: none;
+  }
+}

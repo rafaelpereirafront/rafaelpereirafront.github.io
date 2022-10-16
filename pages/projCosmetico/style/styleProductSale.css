@@ -1,0 +1,161 @@
+.productSale {
+  padding-top: 20em;
+}
+
+.productSale ul {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3.2em;
+}
+
+.productSale img {
+  display: block;
+  width: 100%;
+  margin-bottom: 2.8em;
+}
+
+.sale {
+  position: absolute;
+  top: 0;
+  padding: 0.8em 2.4em;
+  margin: 1.2em;
+  background: #000000;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.productSale h4 {
+  min-height: 48px;
+  text-transform: uppercase;
+}
+
+.productSale p {
+  height: 30px;
+  margin: 0.75em 0;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 19px;
+}
+
+.price {
+  margin-bottom: 1em;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 29px;
+  color: #000000;
+}
+
+.addCar {
+  display: flex;
+}
+
+.btnAdd {
+  width: 100%;
+  padding: 0.8em 0em;
+  margin-left: 1em;
+}
+
+.addRemv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  border: 1px solid var(--blue-color);
+}
+
+.addRemv p {
+  width: 14px;
+  margin: 0 0.5em;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.countLess,
+.countPlus {
+  padding: 0.25em;
+  background: none;
+  color: #000000;
+}
+
+.countLess:hover,
+.countPlus:hover {
+  background: none;
+  box-shadow: none;
+}
+
+/*Breakpoints*/
+
+@media (max-width: 1672px) {
+  .productSale ul {
+    gap: 2.5em;
+  }
+
+  #btnAdd {
+    margin-left: 1em;
+    padding: 0.8em 3.2em;
+  }
+}
+
+/*Notebook*/
+@media (max-width: 1540px) {
+  .productSale ul {
+    gap: 2em;
+  }
+
+  #btnAdd {
+    padding: 16px 57px;
+  }
+}
+
+@media (max-width: 1460px) {
+  .productSale ul {
+    gap: 1.5em;
+  }
+
+  #btnAdd {
+    padding: 16px 57px;
+  }
+}
+
+@media (max-width: 1365px) {
+  .productSale ul {
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2em;
+  }
+}
+
+/*Tablet*/
+
+@media (min-width: 450px) and (max-width: 900px) {
+  .productSale {
+    padding-top: 0;
+    padding-bottom: 180px;
+  }
+
+  .productSale ul {
+    grid-template-columns: 1fr 1fr;
+    gap: 42px;
+  }
+}
+
+/*Mobile*/
+
+@media (max-width: 450px) {
+  .productSale {
+    padding-top: 0;
+    padding-bottom: 120px;
+  }
+
+  .productSale ul {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}

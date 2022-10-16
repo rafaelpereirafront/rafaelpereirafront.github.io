@@ -1,0 +1,290 @@
+.accordion {
+  max-width: 920px;
+  padding: 11.4em 0 14.7em;
+  margin: 0 auto;
+}
+
+.accordion h2 {
+  margin-bottom: 1.23em;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 5.2rem;
+  line-height: 100%;
+  text-align: center;
+}
+
+dt {
+  position: relative;
+  padding: 1.5em 0;
+  cursor: pointer;
+  font-family: 'open sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.5em;
+  letter-spacing: 0.125em;
+  text-align: center;
+}
+
+dt:after {
+  content: '';
+  position: absolute;
+  transform: translateX(-11px);
+  background: #000000;
+  top: 35%;
+  right: 20px;
+  height: 25px;
+  width: 2px;
+  animation: rotX 0.3s linear;
+}
+
+dt::before {
+  content: '';
+  position: absolute;
+  background: #000000;
+  top: 50%;
+  right: 20px;
+  height: 2px;
+  width: 25px;
+}
+
+.answer {
+  max-height: 0;
+  margin: 0 auto;
+  padding: 0 6em;
+  text-align: center;
+  border-bottom: 3px solid #000000;
+  overflow: hidden;
+}
+
+.answer p {
+  margin: 0;
+  padding-bottom: 2em;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #666666;
+}
+
+.answer {
+  transition: max-height 0.5s ease-out;
+}
+
+.question::after,
+.question::before {
+  cursor: pointer;
+}
+
+.faq.activeDrop .answer {
+  max-height: 800px;
+  transition: max-height 1.5s linear;
+}
+
+.activeDrop .question::after {
+  animation: rotY;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotY {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    right: 30px;
+    transform: rotate(-90deg);
+  }
+}
+@keyframes rotX {
+  0% {
+    opacity: 0;
+    right: 30px;
+    transform: rotate(-90deg);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 844px) {
+  .accordion {
+    padding: 10.5em 2.4em 8em;
+  }
+
+  .accordion h2 {
+    margin-bottom: 0.95em;
+    font-size: 4.2rem;
+  }
+
+  .accordion h2,
+  .accordion dt {
+    white-space: pre-line;
+  }
+
+  .accordion dt {
+    padding-right: 1.8rem;
+    text-align: left;
+  }
+
+  dt:after {
+    content: '';
+    position: absolute;
+    transform: translateX(-11px);
+    background: #000000;
+    top: 30px;
+    right: -4px;
+    height: 16px;
+    width: 2px;
+  }
+
+  dt::before {
+    content: '';
+    position: absolute;
+    background: #000000;
+    top: 37px;
+    right: 0px;
+    height: 2px;
+    width: 16px;
+  }
+
+  .accordion dd {
+    padding-left: 1em;
+    text-align: left;
+  }
+
+  .question::after {
+    animation: rotX 0.3s linear;
+  }
+
+  .activeDrop .question::after {
+    animation-duration: 0.4s;
+  }
+
+  @keyframes rotY {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 0;
+      right: 3px;
+      transform: rotate(-90deg);
+    }
+  }
+  @keyframes rotX {
+    0% {
+      opacity: 0;
+      right: 3px;
+      transform: rotate(-90deg);
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .accordion {
+    padding: 10.5em 2.4em 8em;
+  }
+
+  .accordion h2 {
+    margin-bottom: 1em;
+  }
+
+  .accordion h2,
+  .accordion dt {
+    white-space: pre-line;
+  }
+
+  .accordion dt {
+    padding-right: 1.125em;
+    text-align: left;
+  }
+
+  dt:after {
+    content: '';
+    position: absolute;
+    transform: translateX(-11px);
+    background: #000000;
+    top: 30px;
+    right: -4px;
+    height: 16px;
+    width: 2px;
+  }
+
+  dt::before {
+    content: '';
+    position: absolute;
+    background: #000000;
+    top: 37px;
+    right: 0px;
+    height: 2px;
+    width: 16px;
+  }
+
+  .answer {
+    text-align: left;
+  }
+
+  .accordion dd {
+    padding-left: 0;
+  }
+
+  .accordion dd p {
+    padding-left: 1em;
+  }
+
+  .question::after {
+    animation: rotX 0.5s linear;
+  }
+
+  .activeDrop .question::after {
+    animation-duration: 0.4s;
+  }
+
+  .faq.activeDrop .answer {
+    transition: max-height 0.6s linear;
+  }
+
+  @keyframes rotY {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 0;
+      right: 3px;
+      transform: rotate(-90deg);
+    }
+  }
+  @keyframes rotX {
+    0% {
+      opacity: 0;
+      right: 3px;
+      transform: rotate(-90deg);
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

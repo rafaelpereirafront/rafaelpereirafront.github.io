@@ -1,0 +1,225 @@
+.description {
+  margin-top: 10.4em;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.6em;
+}
+
+.description h2,
+.description p,
+.description button {
+  grid-column: 1;
+}
+
+.description h2 {
+  margin-bottom: 0.66em;
+}
+
+.description p:nth-child(1) {
+  margin-top: 0;
+}
+
+.movie {
+  padding-top: 2em;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+iframe {
+  border: none;
+}
+
+/*section about*/
+
+.about {
+  max-width: 1216px;
+  margin: 17.2em auto 14.7em;
+}
+
+.aboutHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow button {
+  padding: 0.67em;
+  background: #ffffff;
+}
+
+.leftArrow {
+  margin-right: 1.12em;
+  transform: rotate(180deg);
+}
+
+.arrow button:hover {
+  background: #e8e8e8;
+  border: 2px solid rgba(0, 0, 0, 0.35);
+  color: #737373;
+}
+
+.about h2 {
+  margin-top: 0;
+}
+
+.slide-wraper {
+  overflow: hidden;
+}
+
+.slideComements {
+  display: flex;
+}
+
+.comments {
+  flex-shrink: 0;
+  max-width: 487px;
+  margin-right: 3.3em;
+  cursor: pointer;
+}
+
+.comments p {
+  margin-top: 4.45em;
+  line-height: 120%;
+}
+
+.comment-p {
+  min-height: 336px;
+}
+
+.arrow img {
+  background-color: #ffffff;
+  border: none;
+}
+
+.comment-p:before {
+  content: '‘‘';
+  font-family: sans-serif;
+  display: block;
+  font-size: 9.6rem;
+  color: #000000;
+}
+
+.member {
+  display: flex;
+  align-items: center;
+  margin: 2.4em 0 3.9em;
+}
+
+.member h3 {
+  white-space: nowrap;
+}
+
+.member p {
+  margin: 0.4em 0 0;
+  white-space: nowrap;
+}
+
+[data-control='slide'] {
+  display: flex;
+  justify-content: center;
+}
+
+[data-control='slide'] li a {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  text-indent: -9999px;
+}
+
+[data-control='slide'] li.active a,
+[data-control='slide'] li a:hover {
+  background: #000000;
+}
+
+@media (min-width: 400px) and (max-width: 844px) {
+  .description {
+    display: block;
+    padding: 0 2.4em;
+  }
+
+  .description h2 {
+    font-size: 3.8rem;
+  }
+
+  .movie {
+    margin-top: 3.2em;
+  }
+
+  iframe {
+    width: 100%;
+    display: block;
+  }
+
+  .about {
+    padding-left: 2.4em;
+  }
+
+  .arrow {
+    display: none;
+  }
+}
+
+/*CellPhone*/
+@media (max-width: 400px) {
+  .description {
+    height: 100%;
+    display: block;
+    padding: 0 2.4em;
+  }
+
+  .description h2 {
+    text-align: left;
+    font-size: 3.2em;
+  }
+
+  .movie {
+    margin-top: 3.2em;
+  }
+
+  iframe {
+    width: 100%;
+    max-height: 208px;
+    display: block;
+  }
+
+  /*about-MB*/
+
+  .about {
+    height: 575.5px;
+    display: block;
+    margin: 0;
+    padding: 8em 0 0 2.4em;
+  }
+
+  .aboutHeader {
+    max-width: 330px;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .comments,
+  .comment-p {
+    width: 292px;
+  }
+
+  .comment-p {
+    min-height: 300px;
+  }
+
+  .comments span p {
+    margin: 0;
+    white-space: pre-line;
+  }
+
+  .comments p {
+    font-size: 1.4rem;
+  }
+
+  .comments h3 {
+    font-size: 2rem;
+  }
+}
