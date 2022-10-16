@@ -1,8 +1,6 @@
 {
   "modalJson": [
     {
-      "tituloEn": "Title1 En",
-      "tituloPt": "Titulo1 Pt",
       "paragraphEn": "this project is the Cosmetics",
       "paragraphBr": "este é o projeto dos cosmeticos",
       "page": "url da webpage0",
@@ -15,8 +13,6 @@
       ]
     },
     {
-      "tituloEn": "Title2 En",
-      "tituloPt": "Titulo2 Pt",
       "paragraphEn": "this project is the NFTs em construção",
       "paragraphBr": "projeto das NFTs em construção",
       "page": "url da webpage1",
@@ -24,8 +20,6 @@
       "src": ["/scr/technology/docker.png", "/scr/technology/reacjs.png"]
     },
     {
-      "tituloEn": "Title3 En",
-      "tituloPt": "Titulo3 Pt",
       "paragraphEn": "this project is the de usuário no banco de dados",
       "paragraphBr": "projeto do Banco de dados",
       "page": "url da webpage2",
@@ -33,8 +27,6 @@
       "src": ["/scr/technology/reacjs.png"]
     },
     {
-      "tituloEn": "Title4 En",
-      "tituloPt": "Titulo4 Pt",
       "paragraphEn": "this project is the react em desenvolvimento",
       "paragraphBr": "este é o projeto do react",
       "page": "url da webpage3",
@@ -42,8 +34,6 @@
       "src": ["/scr/technology/mysql.png"]
     },
     {
-      "tituloEn": "Title5 En",
-      "tituloPt": "Titulo5 Pt",
       "paragraphEn": "this project is the webpage s Lorem ipsum dolor sit amet consectetur adipisicing elit. Et rem aliquid magnam reiciendis numquam totam autem sint, doloribus labore sit rerum asperiores quos id eaque sunt quia corrupti odit consequuntur!",
       "paragraphBr": "este é o projeto do SPMK",
       "page": "url da webpage4",

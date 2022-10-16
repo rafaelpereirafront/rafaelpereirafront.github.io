@@ -30,7 +30,8 @@ body {
 .contain {
   width: 100%;
   max-width: 1286px;
-  padding: 0 1.5em;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
   margin: 0 auto;
 }
 
@@ -82,4 +83,11 @@ a {
 button {
   cursor: pointer;
   font-family: var(--font-family-p);
+}
+
+@media (max-width: 977px) {
+  .contain {
+    padding-right: 2.4em;
+    padding-left: 2.4em;
+  }
 }

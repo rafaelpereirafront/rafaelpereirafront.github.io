@@ -48,7 +48,7 @@
 }
 
 .modal-div {
-  padding: 8em 5em;
+  padding: 10em 5em 8em;
   position: relative;
 }
 
@@ -57,7 +57,7 @@
 }
 
 .modal-text p {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .modal-link {

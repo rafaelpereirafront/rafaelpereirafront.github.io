@@ -47,9 +47,6 @@
   .project_images {
     grid-template-columns: 1fr 1fr;
   }
-  .contain {
-    padding: 0 2.4em;
-  }
 }
 
 /*mobile*/

@@ -2,6 +2,10 @@ header {
   min-height: 100vh;
 }
 
+header section {
+  min-height: 100vh;
+}
+
 .nav-bar {
   width: 100vw;
   position: fixed;
@@ -104,6 +108,16 @@ h1 span {
   z-index: -1;
 }
 
+.mac-mobile {
+  width: 100%;
+  min-width: 800px;
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: -5rem;
+  z-index: -1;
+}
+
 /*nootebook*/
 @media (min-width: 1540px) {
   .mac {
@@ -120,6 +134,10 @@ h1 span {
 @media (max-width: 839px) {
   .mac {
     display: none;
+  }
+
+  .mac-mobile {
+    display: block;
   }
 }
 
