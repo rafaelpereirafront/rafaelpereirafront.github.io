@@ -33,6 +33,19 @@ export default async function initModal() {
         .addEventListener('click', SetAttributeImage);
   }
 
+  const modalText = document.querySelector('.modal-text');
+  const createTitle = document.createElement('h2');
+
+  function SetTitle() {
+    createTitle.setAttribute('data-modal', 'title');
+    for (let n = 0; n < getImage.length; n++)
+      document.getElementById(`image${n + 1}`).addEventListener('click', () => {
+        let h2 = document.getElementById(`title${n + 1}`);
+        createTitle.textContent = h2.textContent;
+        modalText.insertBefore(createTitle, setParagraphModal);
+      });
+  }
+
   const languageBr = document.querySelector('#flagBr');
   const languageEn = document.querySelector('#flagEn');
 
@@ -99,6 +112,7 @@ export default async function initModal() {
   const urlPage = document.querySelector('.modal-a');
   const urlGit = document.querySelector('.modal-git');
 
+  SetTitle();
   SetTechnology();
   SetImage();
   SetParagraph();

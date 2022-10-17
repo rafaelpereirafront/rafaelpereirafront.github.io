@@ -6,10 +6,10 @@
       "page": "url da webpage0",
       "github": "url do github0",
       "src": [
-        "/scr/technology/js.png",
-        "/scr/technology/mysql.png",
-        "/scr/technology/reacjs.png",
-        "/scr/technology/docker.png"
+        "/scr/technology/LogosJavascript.png",
+        "/scr/technology/LogosMysql.png",
+        "/scr/technology/LogosReact 1.png",
+        "/scr/technology/LogosNodejsicon 1.png"
       ]
     },
     {
@@ -17,28 +17,37 @@
       "paragraphBr": "projeto das NFTs em construção",
       "page": "url da webpage1",
       "github": "url do github1",
-      "src": ["/scr/technology/docker.png", "/scr/technology/reacjs.png"]
+      "src": [
+        "/scr/technology/LogosMysql.png",
+        "/scr/technology/LogosReact 1.png"
+      ]
     },
     {
       "paragraphEn": "this project is the de usuário no banco de dados",
       "paragraphBr": "projeto do Banco de dados",
       "page": "url da webpage2",
       "github": "url do github2",
-      "src": ["/scr/technology/reacjs.png"]
+      "src": [
+        "/scr/technology/LogosReact 1.png",
+        "/scr/technology/LogosNodejsicon 1.png"
+      ]
     },
     {
       "paragraphEn": "this project is the react em desenvolvimento",
       "paragraphBr": "este é o projeto do react",
       "page": "url da webpage3",
       "github": "url do github3",
-      "src": ["/scr/technology/mysql.png"]
+      "src": [
+        "/scr/technology/LogosNodejsicon 1.png",
+        "/scr/technology/LogosMysql.png"
+      ]
     },
     {
       "paragraphEn": "this project is the webpage s Lorem ipsum dolor sit amet consectetur adipisicing elit. Et rem aliquid magnam reiciendis numquam totam autem sint, doloribus labore sit rerum asperiores quos id eaque sunt quia corrupti odit consequuntur!",
       "paragraphBr": "este é o projeto do SPMK",
       "page": "url da webpage4",
       "github": "url do github4",
-      "src": ["/scr/technology/nodejs.png"]
+      "src": ["/scr/technology/LogosMysql.png"]
     }
   ]
 }

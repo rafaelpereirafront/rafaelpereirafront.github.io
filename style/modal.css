@@ -70,7 +70,7 @@
 }
 
 .modal-git svg {
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 
 .modal-git svg:hover {
@@ -120,7 +120,8 @@
   display: block;
   width: 100%;
   max-width: 50px;
-  clip-path: circle(50%);
+  /* clip-path: circle(50%); */
+  object-fit: contain;
   box-sizing: border-box;
 }
 
