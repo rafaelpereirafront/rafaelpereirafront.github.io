@@ -59,6 +59,10 @@ export default async function initModal() {
       });
   }
 
+  const url = 'text.json';
+  const urlPage = document.querySelector('.modal-a');
+  const urlGit = document.querySelector('.modal-git');
+
   function jsonModal() {
     fetch(url)
       .then((response) => {
@@ -66,6 +70,8 @@ export default async function initModal() {
       })
       .then((jsonData) => setJson(jsonData));
   }
+
+  function HandleClickImage(e) {}
 
   function setJson(jsonData) {
     for (let i = 0; i < getImage.length; i++)
@@ -85,7 +91,7 @@ export default async function initModal() {
 
   const resJson = await fetch('text.json');
   const data = await resJson.json();
-  const modalTecnology = document.querySelector('.modal-technology');
+  const modalTechnology = document.querySelector('.modal-technology');
 
   function SetTechnology() {
     for (let i = 0; i < getImage.length; i++)
@@ -98,7 +104,7 @@ export default async function initModal() {
         arrayTecnology.forEach((dados) => {
           const elementCreate = document.createElement('img');
           elementCreate.setAttribute('src', dados);
-          modalTecnology.appendChild(elementCreate);
+          modalTechnology.appendChild(elementCreate);
         });
       });
   }
@@ -107,10 +113,6 @@ export default async function initModal() {
     modalOpen[i].addEventListener('click', OpenModal);
   closeModal.addEventListener('click', OpenModal);
   containModal.addEventListener('click', ClickOutside);
-
-  const url = 'text.json';
-  const urlPage = document.querySelector('.modal-a');
-  const urlGit = document.querySelector('.modal-git');
 
   SetTitle();
   SetTechnology();

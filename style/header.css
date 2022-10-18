@@ -117,7 +117,6 @@ h1 span {
   z-index: -1;
 }
 
-/*nootebook*/
 @media (min-width: 1540px) {
   .mac {
     height: 680px;
@@ -141,7 +140,6 @@ h1 span {
   }
 }
 
-/*mobile*/
 @media (max-width: 480px) {
   h1 {
     font-size: 4.2rem;
@@ -157,6 +155,6 @@ h1 span {
   }
 
   .header-text {
-    padding-top: 15em;
+    padding-top: 12em;
   }
 }

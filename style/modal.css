@@ -120,7 +120,6 @@
   display: block;
   width: 100%;
   max-width: 50px;
-  /* clip-path: circle(50%); */
   object-fit: contain;
   box-sizing: border-box;
 }
@@ -157,7 +156,6 @@
   }
 }
 
-/*mobile*/
 @media (max-width: 539px) {
   .modal {
     grid-template-columns: 1fr;
@@ -169,6 +167,7 @@
 
   .project_images {
     grid-template-columns: 1fr;
+    gap: 6em;
   }
 
   [data-modal='imageModal'] {
