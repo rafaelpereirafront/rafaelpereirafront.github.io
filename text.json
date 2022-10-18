@@ -4,21 +4,21 @@
       "paragraphEn": "this project is the Cosmetics",
       "paragraphBr": "este é o projeto dos cosmeticos",
       "page": "url da webpage0",
-      "github": "url do github0",
+      "github": "https://github.com/rafaelpereirafront/ecomerce.beauty.devices",
       "src": ["/scr/technology/logojs.png"]
     },
     {
       "paragraphEn": "this project is the NFTs em construção",
       "paragraphBr": "projeto das NFTs em construção",
       "page": "url da webpage1",
-      "github": "url do github1",
+      "github": "https://github.com/rafaelpereirafront/nftmarket",
       "src": ["/scr/technology/logojs.png"]
     },
     {
       "paragraphEn": "this project is the de usuário no banco de dados",
       "paragraphBr": "projeto do Banco de dados",
       "page": "url da webpage2",
-      "github": "url do github2",
+      "github": "https://github.com/rafaelpereirafront/database.user",
       "src": [
         "/scr/technology/logojs.png",
         "/scr/technology/logonode.png",
@@ -36,7 +36,7 @@
       "paragraphEn": "this project is the webpage s Lorem ipsum dolor sit amet consectetur adipisicing elit. Et rem aliquid magnam reiciendis numquam totam autem sint, doloribus labore sit rerum asperiores quos id eaque sunt quia corrupti odit consequuntur!",
       "paragraphBr": "este é o projeto do SPMK",
       "page": "url da webpage4",
-      "github": "url do github4",
+      "github": "https://github.com/rafaelpereirafront/spmk",
       "src": ["/scr/technology/logojs.png"]
     }
   ]

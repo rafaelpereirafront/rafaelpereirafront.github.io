@@ -71,8 +71,6 @@ export default async function initModal() {
       .then((jsonData) => setJson(jsonData));
   }
 
-  function HandleClickImage(e) {}
-
   function setJson(jsonData) {
     for (let i = 0; i < getImage.length; i++)
       (getParagraph[i].innerText = jsonData.modalJson[i].paragraphEn),
@@ -85,7 +83,8 @@ export default async function initModal() {
         imageArray[i].addEventListener('click', (e) => {
           let id = imageArray.indexOf(e.target);
           urlPage.setAttribute('href', jsonData.modalJson[id].page),
-            urlGit.setAttribute('href', jsonData.modalJson[id].github);
+            urlGit.setAttribute('href', jsonData.modalJson[id].github),
+            urlGit.setAttribute('target', '_blank');
         });
   }
 
