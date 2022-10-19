@@ -1,23 +1,23 @@
 {
   "modalJson": [
     {
-      "paragraphEn": "this project is the Cosmetics",
-      "paragraphBr": "este é o projeto dos cosmeticos",
-      "page": "url da webpage0",
+      "paragraphEn": "E-commerce project under development, focus on responsivity and interaction with user.",
+      "paragraphBr": "Projeto E-commerce em desenvolvimento, focado na responsividade e interação com o usuário.",
+      "page": "",
       "github": "https://github.com/rafaelpereirafront/ecomerce.beauty.devices",
       "src": ["/scr/technology/logojs.png"]
     },
     {
-      "paragraphEn": "this project is the NFTs em construção",
-      "paragraphBr": "projeto das NFTs em construção",
-      "page": "url da webpage1",
+      "paragraphEn": "NFT market project under development with layout Dark and Light.",
+      "paragraphBr": "Projeto de mercado de NFT's em desenvolvimento com layout noturno e claro. ",
+      "page": "",
       "github": "https://github.com/rafaelpereirafront/nftmarket",
       "src": ["/scr/technology/logojs.png"]
     },
     {
-      "paragraphEn": "this project is the de usuário no banco de dados",
-      "paragraphBr": "projeto do Banco de dados",
-      "page": "url da webpage2",
+      "paragraphEn": "User registration and confirmation project, the information are stored in the MySql database, using Nodejs to link the page and the database. ",
+      "paragraphBr": "Projeto de cadastro e confirmação de usuários, as informações são armazenadas no banco de dados MySql, utilizando o Nodejs para interligar a página e o banco de dados.",
+      "page": "",
       "github": "https://github.com/rafaelpereirafront/database.user",
       "src": [
         "/scr/technology/logojs.png",
@@ -26,16 +26,16 @@
       ]
     },
     {
-      "paragraphEn": "this project is the react em desenvolvimento",
-      "paragraphBr": "este é o projeto do react",
-      "page": "url da webpage3",
+      "paragraphEn": "Project under development, using only React.js.",
+      "paragraphBr": "Projeto em desenvolvimento, utilizando apenas React.js.",
+      "page": "",
       "github": "url do github3",
       "src": ["/scr/technology/logoreact.png"]
     },
     {
-      "paragraphEn": "this project is the webpage s Lorem ipsum dolor sit amet consectetur adipisicing elit. Et rem aliquid magnam reiciendis numquam totam autem sint, doloribus labore sit rerum asperiores quos id eaque sunt quia corrupti odit consequuntur!",
-      "paragraphBr": "este é o projeto do SPMK",
-      "page": "url da webpage4",
+      "paragraphEn": "Real project of a loan company.",
+      "paragraphBr": "Projeto real de uma empresa de empréstimos financeiros.",
+      "page": "",
       "github": "https://github.com/rafaelpereirafront/spmk",
       "src": ["/scr/technology/logojs.png"]
     }
