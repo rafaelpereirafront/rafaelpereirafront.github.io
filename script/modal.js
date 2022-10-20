@@ -81,6 +81,7 @@ export default async function initModal() {
         }),
         imageArray[i].addEventListener('click', (e) => {
           let id = imageArray.indexOf(e.target);
+          console.log(urlPage);
           urlPage.setAttribute('href', jsonData.modalJson[id].page),
             urlGit.setAttribute('href', jsonData.modalJson[id].github),
             urlGit.setAttribute('target', '_blank');
