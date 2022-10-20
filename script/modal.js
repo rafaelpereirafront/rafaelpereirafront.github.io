@@ -46,19 +46,6 @@ export default async function initModal() {
       });
   }
 
-  const languageBr = document.querySelector('#flagBr');
-  const languageEn = document.querySelector('#flagEn');
-
-  const getParagraph = document.querySelectorAll('.paragraph-modal');
-  const setParagraphModal = document.querySelector('[data-modal="paragraph"]');
-
-  function SetParagraph() {
-    for (let n = 0; n < getImage.length; n++)
-      document.getElementById(`image${n + 1}`).addEventListener('click', () => {
-        setParagraphModal.textContent = getParagraph[n].textContent;
-      });
-  }
-
   const url = 'text.json';
   const urlPage = document.querySelector('.modal-a');
   const urlGit = document.querySelector('.modal-git');
@@ -71,9 +58,21 @@ export default async function initModal() {
       .then((jsonData) => setJson(jsonData));
   }
 
+  const languageBr = document.querySelector('#flagBr');
+  const languageEn = document.querySelector('#flagEn');
+  const getParagraph = document.querySelectorAll('.paragraph-modal');
+  const setParagraphModal = document.querySelector('[data-modal="paragraph"]');
+
+  function SetParagraph() {
+    for (let n = 0; n < getImage.length; n++)
+      document.getElementById(`image${n + 1}`).addEventListener('click', () => {
+        setParagraphModal.textContent = getParagraph[n].textContent;
+      });
+  }
+
   function setJson(jsonData) {
     for (let i = 0; i < getImage.length; i++)
-      (getParagraph[i].innerText = jsonData.modalJson[i].paragraphEn),
+      (getParagraph[i].innerText = jsonData.modalJson[i].paragraphBr),
         languageEn.addEventListener('click', () => {
           getParagraph[i].innerText = jsonData.modalJson[i].paragraphEn;
         }),
