@@ -3,21 +3,21 @@
     {
       "paragraphEn": "E-commerce project under development, focus on responsivity and interaction with user.",
       "paragraphBr": "Projeto E-commerce em desenvolvimento, focado na responsividade e interação com o usuário.",
-      "page": "",
+      "page": "https://rafaelpereirafront.github.io/ecomerce.beauty.devices/",
       "github": "https://github.com/rafaelpereirafront/ecomerce.beauty.devices",
       "src": ["/scr/technology/logojs.png"]
     },
     {
       "paragraphEn": "NFT market project under development with layout Dark and Light.",
       "paragraphBr": "Projeto de mercado de NFT's em desenvolvimento com layout noturno e claro. ",
-      "page": "",
+      "page": "https://rafaelpereirafront.github.io/nftmarket/",
       "github": "https://github.com/rafaelpereirafront/nftmarket",
       "src": ["/scr/technology/logojs.png"]
     },
     {
       "paragraphEn": "User registration and confirmation project, the information are stored in the MySql database, using Nodejs to link the page and the database. ",
       "paragraphBr": "Projeto de cadastro e confirmação de usuários, as informações são armazenadas no banco de dados MySql, utilizando o Nodejs para interligar a página e o banco de dados.",
-      "page": "",
+      "page": "https://rafaelpereirafront.github.io/database.user/",
       "github": "https://github.com/rafaelpereirafront/database.user",
       "src": [
         "/scr/technology/logojs.png",
@@ -35,7 +35,7 @@
     {
       "paragraphEn": "Real project of a loan company.",
       "paragraphBr": "Projeto real de uma empresa de empréstimos financeiros.",
-      "page": "",
+      "page": "https://www.soparamike.com.br/",
       "github": "https://github.com/rafaelpereirafront/spmk",
       "src": ["/scr/technology/logojs.png"]
     }
