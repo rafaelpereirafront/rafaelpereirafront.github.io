@@ -89,6 +89,20 @@ button {
   font-family: var(--font-family-p);
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: var(--color-title-span);
+}
+
+* {
+  scrollbar-width: 5px;
+  scrollbar-color: var(--color-title-span);
+}
+
 @media (max-width: 977px) {
   .contain {
     padding-right: 2.4em;
