@@ -12,7 +12,7 @@
       "paragraphBr": "Projeto de mercado de NFT's em desenvolvimento com layout noturno e claro. ",
       "page": "https://rafaelpereirafront.github.io/nftmarket/",
       "github": "https://github.com/rafaelpereirafront/nftmarket",
-      "src": ["/scr/technology/logojs.png"]
+      "src": ["/scr/technology/logoreact.png"]
     },
     {
       "paragraphEn": "User registration and confirmation project, the information are stored in the MySql database, using Nodejs to link the page and the database. ",
