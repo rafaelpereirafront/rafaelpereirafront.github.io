@@ -8,13 +8,6 @@
       "src": ["/scr/technology/logojs.png"]
     },
     {
-      "paragraphEn": "NFT market project under development with layout Dark and Light.",
-      "paragraphBr": "Projeto de mercado de NFT's em desenvolvimento com layout noturno e claro. ",
-      "page": "https://rafaelpereirafront.github.io/nftmarket/",
-      "github": "https://github.com/rafaelpereirafront/nftmarket",
-      "src": ["/scr/technology/logoreact.png"]
-    },
-    {
       "paragraphEn": "User registration and confirmation project, the information are stored in the MySql database, using Nodejs to link the page and the database. ",
       "paragraphBr": "Projeto de cadastro e confirmação de usuários, as informações são armazenadas no banco de dados MySql, utilizando o Nodejs para interligar a página e o banco de dados.",
       "page": "https://rafaelpereirafront.github.io/database.user/",
