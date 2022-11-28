@@ -1,22 +1,18 @@
 {
   "modalJson": [
     {
+      "paragraphEn": "PokeApi.",
+      "paragraphBr": "PokeApi",
+      "page": "https://rafaelpereirafront.github.io/pokedex/",
+      "github": "https://github.com/rafaelpereirafront/pokedex",
+      "src": ["/scr/technology/logoreact.png"]
+    },
+    {
       "paragraphEn": "E-commerce project under development, focus on responsivity and interaction with user.",
       "paragraphBr": "Projeto E-commerce em desenvolvimento, focado na responsividade e interação com o usuário.",
       "page": "https://rafaelpereirafront.github.io/ecomerce.beauty.devices/",
       "github": "https://github.com/rafaelpereirafront/ecomerce.beauty.devices",
       "src": ["/scr/technology/logojs.png"]
-    },
-    {
-      "paragraphEn": "User registration and confirmation project, the information are stored in the MySql database, using Nodejs to link the page and the database. ",
-      "paragraphBr": "Projeto de cadastro e confirmação de usuários, as informações são armazenadas no banco de dados MySql, utilizando o Nodejs para interligar a página e o banco de dados.",
-      "page": "https://rafaelpereirafront.github.io/database.user/",
-      "github": "https://github.com/rafaelpereirafront/database.user",
-      "src": [
-        "/scr/technology/logojs.png",
-        "/scr/technology/logonode.png",
-        "/scr/technology/logomysql.png"
-      ]
     },
     {
       "paragraphEn": "Project under development, using only React.js.",

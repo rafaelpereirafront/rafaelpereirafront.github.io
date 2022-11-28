@@ -17,12 +17,13 @@
 .list-img img {
   width: 100%;
   max-width: 60rem;
-  max-height: 48rem;
+  height: 44.3rem;
   display: block;
   border-radius: 15px;
   cursor: pointer;
   overflow: hidden;
   transition: all 0.4s linear;
+  object-fit: cover;
 }
 
 .project_images img:hover {
